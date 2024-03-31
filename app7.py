@@ -157,7 +157,7 @@ def main():
         layout="wide"
     ) 
        
-    st.sidebar.write(f'<video width="480" height="360" controls autoplay><source src="{video_path}" type="video/mp4"></video>', unsafe_allow_html=True)  
+    st.sidebar.write(f'<video width="320" height="240" controls autoplay><source src="{video_path}" type="video/mp4"></video>', unsafe_allow_html=True)  
     st.sidebar.image(image2_path, caption='',width=300)
     
     col1,col2 = st.columns(2)       
