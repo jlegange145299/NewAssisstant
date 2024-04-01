@@ -24,7 +24,7 @@ def generate_video(script):
             "subtitles": "false",
             "provider": {
                 "type": "microsoft",
-                "voice_id": "en-US-JennyNeural"
+                "voice_id": "ar-AE-FatimaNeural"
             },
             "ssml": "false",
             "input":script
@@ -34,7 +34,7 @@ def generate_video(script):
             "pad_audio": "0.0",
             "stitch": "true"
         },
-        "source_url": "https://photosfordidd.s3.eu-central-1.amazonaws.com/alice.png"
+        "source_url": "https://create-images-results.d-id.com/auth0%7C6602fd8cf86a5e615f8af224/drm_f0omgyhvzd3KO92_oD0pn/image.png"
     }
 
     try:
@@ -256,7 +256,7 @@ def main():
                 )    
             print(f"MESSAGES: {st.session_state.messages}")       
                                                               
-            video_url = generate_video(processed_response[:25])
+            video_url = generate_video(processed_response[:125])
             with col1:
              st.write(f'<video width="640" height="480" controls autoplay><source src="{video_url}" type="video/mp4"></video>', unsafe_allow_html=True)
   
