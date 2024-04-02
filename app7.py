@@ -148,7 +148,7 @@ def main():
     assistant_id = st.secrets["ASSISTANT_ID"]
     video_path = "https://photosfordidd.s3.eu-central-1.amazonaws.com/baselinevideo2.mp4"   
     image2_path = "https://photosfordidd.s3.eu-central-1.amazonaws.com/2.png"
-    image3_path = "https://photosfordidd.s3.eu-central-1.amazonaws.com/PDFcover.png"
+    image3_path = "https://photosfordidd.s3.eu-central-1.amazonaws.com/HG+HandBook.png"
     image4_path = "https://photosfordidd.s3.eu-central-1.amazonaws.com/SC.png"
     image5_path = "https://create-images-results.d-id.com/auth0%7C6602fd8cf86a5e615f8af224/drm_f0omgyhvzd3KO92_oD0pn/image.png"
 
@@ -159,8 +159,8 @@ def main():
         layout="wide"
     ) 
 
-    st.sidebar.image(image5_path, caption='',width=300)
-    #st.sidebar.write(f'<video width="320" height="240" controls autoplay><source src="{video_path}" type="video/mp4"></video>', unsafe_allow_html=True)  
+    #st.sidebar.image(image5_path, caption='',width=300)   
+    st.sidebar.write(f'<video width="300" height="220" controls autoplay><source src="{video_path}" type="video/mp4"></video>', unsafe_allow_html=True)  
     st.sidebar.image(image2_path, caption='',width=300)
     
     col1,col2 = st.columns(2)       
